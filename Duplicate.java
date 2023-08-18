@@ -38,8 +38,13 @@ class Duplicate{
 	}
 	public static void main(String[] args)
 	{
-        int arr[] = {1,2,3,1,2,4,5,3};
-		Dup(arr);
+        Scanner in=new Scanner(System.in);
+        int n;
+        System.out.println("Enter size of array");
+        n=in.nextInt();
+        int arr[]=new int[n];
+       for(int i=0;i<n;i++)
+        arr[i]=in.nextInt();
+        Dup(arr);
 	}
 }
-	
